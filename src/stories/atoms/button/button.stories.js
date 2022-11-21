@@ -1,25 +1,27 @@
 import Button from "./Button";
 
 export default {
-  title: "Button", //categoria/subcategoria
+  title: "Atoms/Button", //categoria/subcategoria
   component: Button, //componente seleccionado
   argTypes: {
-    backgroundColor: { control: "color" }, // Se agrega el control de color
+    variant: "primary", // Se agrega el control de color
+  },
+  parameters: {
+    layout: 'centered',
   },
 };
-
 
 const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: "Botón primario",
+  children: "Primary button",
+  onClick: () => console.log("Hola")
 };
 
-export const Link = Template.bind({});
-Link.args = {
-  text: "Soy un link",
-  children: "google.com",
+export const Secondary = Template.bind({});
+Secondary.args = {
+  children: "Button secondary",
+  variant: "secondary"
 };
 
-export const linkedButton = () => <Button href={"google.com"}>Texto</Button>;
