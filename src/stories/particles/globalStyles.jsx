@@ -2,8 +2,11 @@ import { createGlobalStyle } from "styled-components";
 import "../../assets/normalize.css";
 
 const GlobalStyles = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 body {
   background-color: ${(props) => props.theme.background}
@@ -29,7 +32,6 @@ body {
 		-webkit-font-variant-ligatures: none;
 		text-rendering: optimizeLegibility;
 		-moz-osx-font-smoothing: grayscale;
-		font-smoothing: antialiased;
 		-webkit-font-smoothing: antialiased;
 		text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 	}

@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: #1D8FF3;
+}
+
+.docs-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--primary);
+    gap: 10px;  
+    background-color: var(--primary);
+    border-radius: 6px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  
+  .docs-hero .title {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-family: "roboto";
+    color: #fff;
+  }
+
+  .radius {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary);
+  }
+
+  .radius--default {
+    border-radius: 8px;
+  }
+  .radius--large {
+    border-radius: 20px;
+}
+.radius--xl {
+  border-radius: 30px;
+}
+.radius--complete {
+  border-radius: 100px;
+}

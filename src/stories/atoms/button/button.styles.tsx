@@ -27,7 +27,7 @@ const buttonBackground = (props:any) => {
 };
 
 interface Props {
-	variant: string;
+	variant?: string;
 }
 
 const StyledButton = styled.button<Props>`
@@ -37,7 +37,7 @@ const StyledButton = styled.button<Props>`
     padding: 10px 20px;
     border-radius: 100px;
     background-color: ${(props) => buttonBackground(props)};
-    color: #fff;
+    color: ${(props) => props.theme.white};
     transition: 300ms;
     &:hover {
         opacity: 0.8;

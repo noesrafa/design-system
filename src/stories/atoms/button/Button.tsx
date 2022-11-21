@@ -4,12 +4,12 @@ import StyledButton from "./button.styles";
 interface Props {
   children: any;
   onClick?: () => void;
-  variant?: string;
+  variant?: "primary" | "secondary" | "tertiary";
 }
 
 export default function Button({
   children,
-  variant = "primary",
+  variant,
   ...props
 }:Props) {
   return (

@@ -1,10 +1,10 @@
 import Button from "./Button";
 
 export default {
-  title: "Atoms/Button", //categoria/subcategoria
-  component: Button, //componente seleccionado
+  title: "Atoms/Button", 
+  component: Button, 
   argTypes: {
-    variant: "primary", // Se agrega el control de color
+    variant: "primary", 
   },
   parameters: {
     layout: 'centered',
