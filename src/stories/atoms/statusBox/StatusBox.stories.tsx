@@ -1,17 +1,19 @@
 import StatusBox from "./StatusBox";
+import {Meta, Story} from "@storybook/react";
 
 export default {
     title: "Atoms/Status Box", 
     component: StatusBox, 
-    argTypes: {
-      status: "Activo",
-    },
     parameters: {
       layout: 'centered',
     },
-  } 
+  }  as Meta;
   
-  const Template = (args:any) => <StatusBox {...args} />;
+  const Template: Story<TemplateProps> = (args:any) => <StatusBox {...args} />;
+
+  interface TemplateProps {
+    status:"Activo" | "Positivo" | "Negativo"
+  }
   
   export const Active = Template.bind({});
   Active.args = {

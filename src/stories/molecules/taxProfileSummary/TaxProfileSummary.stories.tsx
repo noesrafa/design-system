@@ -1,4 +1,5 @@
 import TaxProfileSummary from "./TaxProfileSummary";
+import {Meta, Story} from "@storybook/react";
 
 export default {
     title: "Molecules/Tax Profile", 
@@ -6,9 +7,17 @@ export default {
     parameters: {
       layout: 'fullscreen',
     },
-  } 
+  } as Meta;
   
-  const Template = (args:any) => <TaxProfileSummary {...args} />;
+  const Template: Story<TemplateProps> = (args) => <TaxProfileSummary {...args} />;
+
+  interface TemplateProps {
+    name: string;
+    rfc: string;
+    address: string;
+    taxStatus: "Positivo" | "Negativo" | "Activo";
+    opinion: "Positivo" | "Negativo";
+  }
   
   export const Vinculado = Template.bind({});
   Vinculado.args = {
