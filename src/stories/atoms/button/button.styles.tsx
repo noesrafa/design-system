@@ -15,8 +15,8 @@ const buttonBackground = (props:any) => {
 		case "secondary":
 			colour = props.theme.secondary;
 			break;
-		case "tertiary":
-			colour = props.theme.tertiary;
+		case "disable":
+			colour = props.theme.gray;
 			break;
 		default:
 			colour = props.theme.primary;
@@ -32,13 +32,15 @@ interface Props {
 
 const StyledButton = styled.button<Props>`
     cursor: pointer;
+	width: 254px;
     outline: none;
     border: none;
-    padding: 10px 20px;
+    padding: 16px 20px;
     border-radius: 100px;
     background-color: ${(props) => buttonBackground(props)};
     color: ${(props) => props.theme.white};
     transition: 300ms;
+	font-size: 14px;
     &:hover {
         opacity: 0.8;
     }

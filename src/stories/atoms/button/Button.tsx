@@ -4,7 +4,7 @@ import StyledButton from "./button.styles";
 interface Props {
   children: any;
   onClick?: () => void;
-  variant?: "primary" | "secondary" | "tertiary";
+  variant?: "primary" | "secondary" | "disable";
 }
 
 export default function Button({

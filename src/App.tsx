@@ -6,7 +6,7 @@ function App() {
       <Button onClick={() => console.log('hola')}>
         Primary button
       </Button>
-      <Button variant="tertiary">
+      <Button variant="disable">
         Tertiary button
       </Button>
     </div>

@@ -21,7 +21,14 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: "Button secondary",
-  variant: "secondary"
+  children: "Secondary button",
+  variant: "secondary",
+  onClick: () => console.log("Hola")
+};
+
+export const Disable = Template.bind({});
+Disable.args = {
+  children: "Button disable",
+  variant: "disable"
 };
 
